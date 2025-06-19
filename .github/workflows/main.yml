@@ -1,0 +1,16 @@
+name: Test Runner
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: [ubuntu-24.04-s390x, ubuntu-24.04-ppc64le]
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Echo test message
+        run: echo "✅ GitHub Actions runner is working!"
