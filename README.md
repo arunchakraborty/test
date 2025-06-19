@@ -1,1 +1,1 @@
-this is for teting purpose only
+this is for testing purpose only
